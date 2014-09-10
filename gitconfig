@@ -1,0 +1,20 @@
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  le = log --oneline --decorate
+  logtree = log --graph --oneline --decorate --all
+[core]
+  autocrlf = input
+  excludesfile = /Users/bjarki/.gitignore
+[color]
+  ui = true
+[user]
+  name = Bjarki Gudlaugsson
+  email = bjarki@codehuggers.com
+[push]
+  default = simple
