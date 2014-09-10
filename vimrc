@@ -60,7 +60,7 @@ set relativenumber
 set cursorline
 
 " Colorscheme settings
-color jellybeans
+color base16-ocean
 let base16colorspace=256 " Access colors present in 256 colorspace
 
 " Shortcuts
@@ -165,15 +165,10 @@ if has('conceal')
 endif
 
 " ----------------------------------------------------------------------------
-"  Powerline
-" ----------------------------------------------------------------------------
-" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-" set laststatus=2
-
-" ----------------------------------------------------------------------------
 "  Airline
 " ----------------------------------------------------------------------------
 let g:airline_powerline_fonts = 1
+set laststatus=2
 
 " ----------------------------------------------------------------------------
 "  Tagbar

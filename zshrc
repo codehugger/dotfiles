@@ -80,7 +80,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Go
-export GOPATH=~/Projects/go
+export GOPATH=~/Projects/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$GOPATH/bin:$PATH
 
@@ -98,5 +98,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Haskell
-export PATH=$HOME/.cabal/bin:$PATH
+gopwd() {
+  export GOPATH=$(pwd)
+}
+
+# disable annoying ^C output
+stty -echoctl
