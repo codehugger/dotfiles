@@ -104,3 +104,9 @@ gopwd() {
 
 # disable annoying ^C output
 stty -echoctl
+
+# Haskell
+export PATH=$HOME/.cabal/bin:$PATH
+
+# 365 projects
+export CHARGER_CONFIG=~/Projects/charger/.mr.developer.cfg
